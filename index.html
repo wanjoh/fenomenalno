@@ -12,10 +12,23 @@
 </head>
 
 <body>
-  <h1>
+<header>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; meni</span>
+<h1>
   naslov
   </h1>
-  <img src="kodkucama.jpg" alt="hesteg kodkucama" width="25%" height="25%"/>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://github.com/wanjoh"  target="_blank">moj git nalog</a>
+  <a href="https://github.com/wanjoh/Sajt" target="_blank">repo 1(ovaj sajt)</a>
+  <a href="https://github.com/wanjoh/nestostaro" target="_blank">repo 2</a>
+  <a href="https://www.worldometers.info/coronavirus/" target="_blank">statistika</a>
+</div>
+  
+
+  <img src="kodkucama.jpg" alt="hesteg kodkucama" width="25%" height="25%" />
   
   <p><i>
   Мора да постоји некакав излаз одавде<br>
@@ -25,23 +38,16 @@
 Пословни људи, они пију моје вино<br>
 Ратар ми копа земљу<br>
 Ниједан није био на памети<br>
-Нико му не говори<br>
-Хеј, хеј<br>
-Нема разлога за узбуђење<br>
-Лопов о коме је љубазно говорио<br>
-Има нас много међу нама<br>
-Ко осећа да је живот само шала<br>
-Али, ух, али ти и ја, прошли смо кроз то<br>
-А ово није наша судбина<br>
-Сада ћемо престати да лажно говоримо<br>
-Час касни, хеј<br>
-Уздуж стражарске куле<br>
-Принцеза је задржала поглед<br>
-Док су све жене долазиле и одлазиле<br>
-И босоноге слуге<br>
-Напољу у хладној даљини<br>
-Дивља мачка је зарежала<br>
-Два возача су се приближавала<br>
-А ветар је почео да завија</i></p>
+Нико му не говори...<br>
+</i></p>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
